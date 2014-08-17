@@ -58,5 +58,5 @@ mydoc.test.Points = [(pt1, 'Vertex1')]
 mydoc.test.NbIter = 10
 
 mydoc.recompute()
-
+Gui.SendMsgToActiveView("ViewFit")
 

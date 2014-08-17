@@ -103,5 +103,5 @@ sew1 = mydoc.addObject('SurfaceTools::Sewing', 'sew1')
 sew1.aShapeList = [(test1,'Face1'),(test2,'Face1')]
 
 mydoc.recompute()
-
+Gui.SendMsgToActiveView("ViewFit")
 

@@ -94,4 +94,5 @@ test2.orderB = [2,2,0]
 test2.NbIter = 5
 
 mydoc.recompute()
+Gui.SendMsgToActiveView("ViewFit")
 

@@ -43,4 +43,4 @@ cut = mydoc.addObject('SurfaceTools::Cut', 'Cut')
 cut.aShapeList = [(Ext1,"Face1"),(Ext2,"Face1")]
 
 mydoc.recompute()
-
+Gui.SendMsgToActiveView("ViewFit")
