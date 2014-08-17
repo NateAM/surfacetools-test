@@ -2,7 +2,7 @@ import SurfaceTools
 import Draft
 import Part
 
-docname = "Unnamed"
+docname = "TestCut"
 
 App.newDocument(docname)
 App.setActiveDocument(docname)

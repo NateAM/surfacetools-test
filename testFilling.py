@@ -1,6 +1,6 @@
 import SurfaceTools
 
-docname = "Unnamed"
+docname = "TestFilling"
 
 App.newDocument(docname)
 App.setActiveDocument(docname)

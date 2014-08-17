@@ -1,6 +1,6 @@
 import SurfaceTools
 
-docname = "Unnamed"
+docname = "TestFilling2"
 
 App.newDocument(docname)
 App.setActiveDocument(docname)
@@ -31,13 +31,13 @@ sw2 = Draft.makeWire(psw2,closed=False,face=False,support=None)
 ### Constraint Faces ###
 
 import Part
-sweep1 = App.getDocument('Unnamed').addObject('Part::Sweep','Sweep1')
+sweep1 = mydoc.addObject('Part::Sweep','Sweep1')
 sweep1.Sections=[bs1, ]
 sweep1.Spine=(sw1,["Edge1"])
 sweep1.Solid=False
 sweep1.Frenet=False
 
-sweep2 = App.getDocument('Unnamed').addObject('Part::Sweep','Sweep2')
+sweep2 = mydoc.addObject('Part::Sweep','Sweep2')
 sweep2.Sections=[bs2, ]
 sweep2.Spine=(sw2,["Edge1"])
 sweep2.Solid=False
