@@ -23,6 +23,9 @@ pf4 = Draft.makeBSpline(p4,closed=False,face=False,support=None)
 p5  = [p1[-1],p2[-1],p3[-1]]
 pf5 = Draft.makeBSpline(p5,closed=False,face=False,support=None)
 
+p6  = [p1[1],p2[1],p3[1]]
+pf6 = Draft.makeBSpline(p6,closed=False,face=False,support=None)
+
 ### Create a filling object ###
 heel = mydoc.addObject('SurfaceTools::Filling', 'heel')
 
@@ -31,7 +34,7 @@ heel.Border = [(pf1,'Edge1'),(pf3,'Edge1'),(pf4,'Edge1'),(pf5,'Edge1')]
 heel.orderB = [0]*len(heel.Border)
 
 ### Define additional curves ###
-heel.Curves = [(pf2,'Edge1')]
+heel.Curves = [(pf2,'Edge1'),(pf6,'Edge1')]
 heel.orderC = [0]*len(heel.Curves)
 
 ### Set number of iterations ###
